@@ -20,10 +20,18 @@ const Header = () => {
   }, [isDarkMode]);
 
   const navLinks = [
-    { href: "#projects", label: "Projects" },
-    { href: "#experience", label: "Experience" },
-    { href: "#contact", label: "Contact" },
+    { href: "projects", label: "Projects" },
+    { href: "experience", label: "Experience" },
+    { href: "contact", label: "Contact" },
   ];
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <header
@@ -36,20 +44,23 @@ const Header = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="font-heading text-xl font-bold text-foreground hover:text-primary transition-colors">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="font-heading text-xl font-bold text-foreground hover:text-primary transition-colors"
+          >
             CH<span className="text-primary">.</span>
-          </a>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
+              <button
                 key={link.href}
-                href={link.href}
+                onClick={() => scrollToSection(link.href)}
                 className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium"
               >
                 {link.label}
-              </a>
+              </button>
             ))}
             <Button
               variant="ghost"
@@ -90,14 +101,13 @@ const Header = () => {
           <nav className="md:hidden mt-4 pb-4 border-t border-border/50 pt-4">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
-                <a
+                <button
                   key={link.href}
-                  href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-muted-foreground hover:text-foreground transition-colors text-lg font-medium"
+                  onClick={() => scrollToSection(link.href)}
+                  className="text-muted-foreground hover:text-foreground transition-colors text-lg font-medium text-left"
                 >
                   {link.label}
-                </a>
+                </button>
               ))}
             </div>
           </nav>
