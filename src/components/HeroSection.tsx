@@ -1,5 +1,13 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown, User } from "lucide-react";
+
+// Helper function for smooth scrolling to sections
+const scrollToSection = (sectionId: string) => {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const HeroSection = () => {
   return (
@@ -36,17 +44,15 @@ const HeroSection = () => {
         </p>
         
         <div className="opacity-0 animate-fade-in-up delay-400 flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="xl" asChild>
-            <a href="#projects">
-              View Work
-              <ArrowDown className="ml-2 h-5 w-5" />
-            </a>
+          {/* View Work button — scrolls to projects section */}
+          <Button variant="hero" size="xl" onClick={() => scrollToSection("projects")}>
+            View Work
+            <ArrowDown className="ml-2 h-5 w-5" />
           </Button>
-          <Button variant="heroOutline" size="xl" asChild>
-            <a href="#contact">
-              <Mail className="mr-2 h-5 w-5" />
-              Contact Me
-            </a>
+          {/* About Me button — scrolls to about section */}
+          <Button variant="heroOutline" size="xl" onClick={() => scrollToSection("about")}>
+            <User className="mr-2 h-5 w-5" />
+            About Me
           </Button>
         </div>
       </div>
