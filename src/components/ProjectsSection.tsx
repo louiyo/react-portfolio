@@ -9,7 +9,7 @@ const projects = [
     description: "Scientific Assistant at EPFL's Digital Humanities Lab using LLMs to detect coordinated Wikipedia editing campaigns and analyze the weaponization of culture online through disinformation and ideological bias injection.",
     image: dhCover,
     tags: ["LLMs", "NLP", "Cultural Heritage", "Digital Humanities"],
-    liveUrl: "https://www.epfl.ch/schools/cdh/",
+    liveUrl: "https://github.com/dh-epfl-students",
   },
   {
     title: "LLM Fine-tuning for Hazard Processing",
