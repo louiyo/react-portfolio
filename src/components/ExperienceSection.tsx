@@ -23,9 +23,10 @@ const experiences = [
     title: "Scientific Assistant",
     company: "EPFL - Digital Humanities Lab",
     period: "February 2026 - Present",
-    description: "Using LLMs to analyze the weaponization of culture online through Wikipedia edits.",
+    description: "Developing computational methods to analyze cultural manipulation patterns in online platforms. Using state-of-the-art LLMs and NLP techniques to investigate how culture is weaponized through Wikipedia edit histories, uncovering systematic patterns in collaborative knowledge construction.",
     highlights: ["LLMs", "Digital Humanities", "Wikipedia Analysis", "NLP", "Cultural Studies"],
     icon: "work", // Use "work" for briefcase, "education" for graduation cap
+    image: "https://www.epfl.ch/education/phd/eddh-digital-humanities/wp-content/uploads/2022/07/EDDH_COVER-1536x864.jpg",
   },
   {
     title: "Freelance Full-Stack & AI Developer",
