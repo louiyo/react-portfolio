@@ -20,6 +20,14 @@ import { Briefcase, Calendar, GraduationCap } from "lucide-react";
 // The component will automatically render them in order.
 const experiences = [
   {
+    title: "Scientific Assistant",
+    company: "EPFL - Digital Humanities Lab",
+    period: "2025 - Present",
+    description: "Using LLMs to analyze the weaponization of culture online through Wikipedia edits. Developing computational methods to detect and understand cultural manipulation patterns in collaborative knowledge platforms.",
+    highlights: ["LLMs", "Digital Humanities", "Wikipedia Analysis", "NLP", "Cultural Studies"],
+    icon: "work", // Use "work" for briefcase, "education" for graduation cap
+  },
+  {
     title: "Freelance Full-Stack & AI Developer",
     company: "Self-Employed",
     period: "2025 - Present",
