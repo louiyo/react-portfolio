@@ -1,10 +1,13 @@
 import ProjectCard from "./ProjectCard";
+import dhCover from "../resources/DHcover.jpg";
+import thesisCover from "../resources/thesis.png";
+import yspanorCover from "../resources/yspanor.png";
 
 const projects = [
   {
     title: "Weaponization of Culture via Wikipedia — EPFL Digital Humanities Lab",
     description: "Scientific Assistant at EPFL's Digital Humanities Lab using LLMs to detect coordinated Wikipedia editing campaigns and analyze the weaponization of culture online through disinformation and ideological bias injection.",
-    image: "src/resources/DHcover.jpg",
+    image: dhCover,
     tags: ["LLMs", "NLP", "Cultural Heritage", "Digital Humanities"],
     liveUrl: "https://www.epfl.ch/schools/cdh/",
   },
@@ -32,7 +35,7 @@ const projects = [
   {
     title: "Digital Human Experiment for Memory Research",
     description: "Master thesis at Priestley Lab (EPFL) designing Unity C# experiments for mental time-travel and one-shot learning studies in behavioral neurosciences.",
-    image: "src/resources/thesis.png",
+    image: thesisCover,
     tags: ["Unity", "C#", "Neuroscience", "Experiment Design"],
     liveUrl: "https://www.epfl.ch/labs/gr-priestley/research/",
   },
@@ -71,7 +74,7 @@ const projects = [
   {
     title: "MVP of an asymmetric strategy video-game",
     description: "Minimum Viable Product of a video-game built with Unity set in an original dark fantasy universe.",
-    image: "src/resources/yspanor.png",
+    image: yspanorCover,
     tags: ["Unity", "C#", "Game Design", "Game development"],
     nda: true,
   },
