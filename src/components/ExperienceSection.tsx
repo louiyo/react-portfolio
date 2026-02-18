@@ -22,8 +22,8 @@ const experiences = [
   {
     title: "Scientific Assistant",
     company: "EPFL - Digital Humanities Lab",
-    period: "2025 - Present",
-    description: "Using LLMs to analyze the weaponization of culture online through Wikipedia edits. Developing computational methods to detect and understand cultural manipulation patterns in collaborative knowledge platforms.",
+    period: "February 2026 - Present",
+    description: "Using LLMs to analyze the weaponization of culture online through Wikipedia edits.",
     highlights: ["LLMs", "Digital Humanities", "Wikipedia Analysis", "NLP", "Cultural Studies"],
     icon: "work", // Use "work" for briefcase, "education" for graduation cap
   },
