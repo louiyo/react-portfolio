@@ -17,8 +17,16 @@ import { Briefcase, Calendar, GraduationCap } from "lucide-react";
 // Experience Data Configuration
 // ============================================
 // Add, remove, or modify experiences here.
-// The component will automatically render them in order.
+// The component will automatically render ultureal them in order.
 const experiences = [
+  {
+    title: "Scientific Assistant",
+    company: "EPFL - Digital Humanities Lab",
+    period: "February 2026 - Present",
+    description: "Leveraging LLMs to analyze the weaponization of culture online through the study of Wikipedia edits, identifying coordinated manipulation and disinformation patterns.",
+    highlights: ["LLMs", "NLP", "Digital Humanities", "Cultural Heritage"],
+    icon: "work",
+  },
   {
     title: "Freelance Full-Stack & AI Developer",
     company: "Self-Employed",

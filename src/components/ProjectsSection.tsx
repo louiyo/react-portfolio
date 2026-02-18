@@ -2,6 +2,13 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
+    title: "Weaponization of Culture via Wikipedia — EPFL Digital Humanities Lab",
+    description: "Scientific Assistant at EPFL's Digital Humanities Lab using LLMs to detect coordinated Wikipedia editing campaigns and analyze the weaponization of culture online through disinformation and ideological bias injection.",
+    image: "src/resources/DHcover.jpg",
+    tags: ["LLMs", "NLP", "Cultural Heritage", "Digital Humanities"],
+    liveUrl: "https://www.epfl.ch/schools/cdh/",
+  },
+  {
     title: "LLM Fine-tuning for Hazard Processing",
     description: "Natural and man-made hazard classification using RAG, prompt engineering, OpenAI function calling, and LLM fine-tuning with Unsloth. Embeddings generated with Cohere & Hugging Face.",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
